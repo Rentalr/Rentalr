@@ -12,11 +12,20 @@
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/96bedca6d6.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
 <!-- Main container start -->
 <div class="main-container" -->
     <!-- Navigation start -->
+   
     <div class="aside">
         <div class="logo">
             <a href="#"><span>R</span>entlar</a>
@@ -24,12 +33,23 @@
         <div class="nav-toggler">
             <span></span>
         </div>
-        <nav id="navbar" class="nav">
+        <nav id="navbar" class="nav padd-15">
             <ul>
-                <li><a href="#home" class="active"> Home</a></li>
-               
+                <li><a href="#home" class="active" hidden> Home</a></li>
             </ul>
-            <ul>
+
+            <ul class="nav1">
+                <li><a href="#"><i class="fa fa-arrow-right-to-bracket"></i> Login</a></li>
+                <li><a href="#"><i class="fa fa-user-plus"></i> Sign up</a></li>
+                <li><a href="#"><i class="fa fa-wallet"></i> Billing</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"> </i> Contact Us</a></li>
+                <li><a href="#"><i class="fa-solid fa-money-check"></i> Sacco</a></li>
+            
+            
+            </ul>
+
+            <ul class="nav2">
+               
                 <li><a href="#landlord"> Landlords</a></li>
                 <li><a href="#manager"> Property Managers</a></li>
                 <li><a href="#tenant"> Tenants</a></li>
@@ -37,15 +57,7 @@
 
             </ul>
 
-            <ul>
-                <li><a href="#"><i class="fa fa-arrow-right-to-bracket"></i> Login</a></li>
-                <li><a href="#"><i class="fa fa-user-plus"></i> Sign up</a></li>
-                <li><a href="#"><i class="fa fa-wallet"></i> Billing</a></li>
-                <li><a href="#contact"><i class="fa fa-comments"> </i> Contact Us</a></li>
-                <li><a href="#"><i class="fa-solid fa-money-check"></i> Sacco</a></li>
-
             
-            </ul>
         </nav>
     </div>
     <!-- Navigation end -->
@@ -56,11 +68,38 @@
     <div class="container">
         <div class="row">
             <div class="home-info padd-15">
+               <div class = "slides">
+                   <input type="radio" name="radio_btn" id="radio1">
+                    <input type="radio" name="radio_btn" id="radio1">
+                    <input type="radio" name="radio_btn" id="radio1">
+                    <input type="radio" name="radio_btn" id="radio1">
+                    <input type="radio" name="radio_btn" id="radio1">
+                
+                    <div class="slide1">
+                        <img src="img/hse4.jpg" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="img/hse3.jpg" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="img/hse1.jpg" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="img/hse5.jpg" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="img/ap1.jpg" alt="">
+                    </div>
                 <div class="section slogan">
                     <div class="inner">
                         <h1>rental property management software <br> that brings landlords, property managers, tenant, and contractors together</h1>
                         <p>Online rent payment, tenant screening, accounting, task management, invoicing, reporting, and many more...</p>
                     </div>
+                </div>
                 </div>
 <div class = roles >
     <h3 class="header"> The end-to-end property management software</h3>
@@ -558,9 +597,8 @@
 
 <!-- ==== Contact section end ==== -->
 
-</div>
-
     <!-- Main content end -->
-    </div>
+    
+
 </body>
 </html>
