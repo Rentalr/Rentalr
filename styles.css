@@ -180,46 +180,176 @@ i {
 }
 /* home */
 
-.bg-slider {
-  z-index: 777;
-  position: relative;
+.slider {
   width: 100%;
-  min-height: 100vh;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-.bg-slider .swiper-slide {
-  position: relative;
-  width: 100%;
-  height: 100vh;
+/* .slides {
+  width: 500%;
+  height: 500px;
+  display: flex;
 }
+.slides input {
+  display: none;
+} */
 
-.bg-slider .swiper-slide img {
+/* .slide {
+  width: 20%;
+  transition: 2s;
+} */
+.slide img {
   width: 100%;
-  height: 100vh;
+  height: 500px;
   object-fit: cover;
-  background-position: center;
-  background-size: cover;
-  pointer-events: none;
 }
 
-.swiper-slide .text-content {
+.slider {
+  overflow: hidden;
+}
+.slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 100s slider infinite;
+}
+.slider figure img {
+  max-width: 100%;
+  width: 20%;
+  height: 500px;
+  float: left;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+/* manual slide navigator */
+.navigation-manual {
   position: absolute;
-  top: 25%;
-  color: var(--bg-black-100);
-  margin: 0 200px;
+  width: 100%;
+  margin-top: 460px;
+  display: flex;
+  justify-content: center;
+}
+.manual-btn {
+  /* border: 2px solid var(--bg-browm-700); */
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  /* background-color: var(--bg-browm-700); */
+}
+
+#radio1.checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2.checked ~ .first {
+  margin-left: -20px;
+}
+
+#radio3.checked ~ .first {
+  margin-left: -40px;
+}
+
+#radio4.checked ~ .first {
+  margin-left: -60px;
+}
+
+#radio5.checked ~ .first {
+  margin-left: -80px;
+}
+.navigation-auto {
+  position: absolute;
+  width: 100%;
+  margin-top: 460px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-auto div {
+  /* border: 2px solid var(--scroll-thumb-color); */
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+#radio1.checked ~ .navigation-auto .autobtn1 {
+  background-color: #043927;
+}
+#radio2.checked ~ .navigation-auto .autobtn2 {
+  background-color: #043927;
+}
+#radio3.checked ~ .navigation-auto .autobtn3 {
+  background-color: #043927;
+}
+#radio4.checked ~ .navigation-auto .autobtn4 {
+  background-color: #043927;
+}
+#radio5.checked ~ .navigation-auto .autobtn5 {
+  background-color: #043927;
+}
+
+.image .text-content {
+  position: absolute;
+  top: 45%;
+  color: var(--text-black-100);
+  margin-left: 30px;
+  margin-top: 200px;
   transition: 0.3s ease;
+  width: 500px;
+  height: 500px;
 }
 
-.swiper-slide .text-content h1 {
-  font-size: 4em;
+.image .text-content .inner .title {
+  color: var(--bg-grey-100);
   font-weight: 700;
-  text-shadow: var(--text-shadow);
-  margin-bottom: 20px;
-  transform: translateY(-50px);
-  opacity: 0;
+  padding: 15px 20px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  position: relative;
+  /* opacity: 0; */
 }
 
-.swiper-slide-active .text-content h1 {
+.image-active .text-content .inner .title {
   transform: translateY(0);
   opacity: 1;
   transition: 1s ease;
@@ -227,12 +357,11 @@ i {
   transition-property: transform, opacity;
 }
 
-.swiper-slide .text-content h1 span {
-  font-size: 0.3em;
-  font-weight: 300;
+.image .text-content .inner .title span {
+  font-family: "Clicker Script", cursive;
+  font-size: 48px;
 }
-
-.swiper-slide .text-content p {
+.image .text-content .inner p {
   max-width: 700px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
@@ -244,54 +373,12 @@ i {
   box-shadow: var(--box-shadow);
   transform: translateX(-80px);
   opacity: 0;
-  color: var(--bg-black-100);
 }
 
-.swiper-slide-active .text-content p {
+.image .text-content .inner p {
   transform: translateX(0);
   opacity: 1;
   transition: 1s ease;
   transition-delay: 0.3s;
   transition-property: transform, opacity;
-}
-
-.dark-layer:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.1);
-}
-
-.bg-slider-thumbs {
-  z-index: 777;
-  position: absolute;
-  bottom: 7em;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: 0.3s ease;
-}
-
-.thumbs-container {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  padding: 10px 3px;
-  border-radius: 10px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: var(--box-shadow);
-}
-
-.thumbs-container img {
-  width: 50px;
-  height: 35px;
-  margin: 0 5px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.swiper-slide-thumb-active {
-  border: 1px solid var(--white-color);
 }
