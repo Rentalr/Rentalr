@@ -249,9 +249,10 @@ input[type="checkbox"] {
 } */
 .slide img {
   margin-top: 130px;
-  width: 800px;
+  width: 100%;
   height: 700px;
   object-fit: cover;
+  display: block;
 }
 
 .slider {
