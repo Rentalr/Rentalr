@@ -38,23 +38,22 @@
             <nav id="navbar" class="nav padd-15">
                 <div class="nav-items">
         
-                    <ul>
-                        <li><a href="#home" class="active" hidden> Home</a></li>
-                    </ul>
-        
+                 
                     <ul class="nav1">
                         <!-- <i class="fa-solid fa-xmark"></i> -->
-                        <li><a href="#billing"><i class="fa fa-wallet"></i> Billing</a></li>
+                        <li><a href="billing.html"><i class="fa fa-wallet"></i> Billing</a></li>
                         <li><a href="#contact"><i class="fa fa-comments"> </i> Contact Us</a></li>
-                        <li><a href="#"><i class="fa-solid fa-money-check"></i> Sacco</a></li>
-                        <li><a href="#"><i class="fa fa-arrow-right-to-bracket"></i> Login</a></li>
-                        <li><a href="#"><i class="fa fa-user-plus"></i> Sign up</a></li>
+                        <li><a href="sacco.html"><i class="fa-solid fa-money-check"></i> Sacco</a></li>
+                        <li><a href="login.html"><i class="fa fa-arrow-right-to-bracket"></i> Login</a></li>
+                        <li><a href="signup.html"><i class="fa fa-user-plus"></i> Sign up</a></li>
         
         
                     </ul>
         
                     <ul class="nav2">
                         <!-- <i class="fa-solid fa-xmark"></i> -->
+                <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+
                         <li><a href="#landlord"> Landlords</a></li>
                         <li><a href="#manager"> Property Managers</a></li>
                         <li><a href="#tenant"> Tenants</a></li>
@@ -167,5 +166,131 @@
                         </div>
                     </div>
     </div>
+<!-- billing -->
+<section class="billing section" id="billing">
+    <div class="container">
+        <div class="row">
+            <h2 class="title">Billing</h2>
+            <div class="billing-info ">
+
+<div class="billing-info-left">
+    <img src="img/billing.png" alt="payment screenshot">
+</div>
+<div class="billing-info-right">
+   
+
+    <h3 class="sub-title">Free trial</h3>
+    <p>
+        We're currently offering a free 3 month trial of Housters.
+    </p>
+    
+    <h3 class="sub-title">Pricing</h3>
+    <p>
+        For Tenants and Contractors, Housters is free to use, permanently.
+        For Landlords and Property Managers, after the free trial ends the Housters monthly subscription costs <span
+            class="translate-billable-currency">1</span>
+        per unit, with a maximum of <span class="translate-billable-currency">40</span>.
+    </p>
+    
+    <h3 class="sub-title">Pricing Examples</h3>
+    <ul>
+        <li>If you own a 16 apartment building, your monthly subscription will be <span
+                class="translate-billable-currency">16</span>.</li>
+        <li>If you own three single family properties, your monthly subscription will be <span
+                class="translate-billable-currency">3</span>.</li>
+        <li>If you own two 50 apartment buildings, your monthly subscription will be <span
+                class="translate-billable-currency">40</span>.</li>
+    </ul>
+    
+    <h3 class="sub-title">What's a unit?</h3>
+    <p>
+        A unit is a separate living floor or space. A 20 apartment building would be 20 units, whereas a single family home
+        would be 1 unit.
+    </p>
+
+</div>
+    </div>
+        </div>
+<!-- billing form -->
+<form action="">
+
+    <div class="row">
+
+        <div class="col">
+
+            <h3 class="title">billing address</h3>
+
+            <div class="inputBox">
+                <span>full name :</span>
+                <input type="text" placeholder="john deo">
+            </div>
+            <div class="inputBox">
+                <span>email :</span>
+                <input type="email" placeholder="example@example.com">
+            </div>
+            <div class="inputBox">
+                <span>address :</span>
+                <input type="text" placeholder="room - street - locality">
+            </div>
+            <div class="inputBox">
+                <span>city :</span>
+                <input type="text" placeholder="Nairobi">
+            </div>
+
+            <div class="flex">
+                <div class="inputBox">
+                    <span>state :</span>
+                    <input type="text" placeholder="Kenya">
+                </div>
+                <div class="inputBox">
+                    <span>zip code :</span>
+                    <input type="text" placeholder="123 456">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col">
+
+            <h3 class="title">payment</h3>
+
+            <div class="inputBox">
+                <span>cards accepted :</span>
+                <img src="images/card_img.png" alt="">
+            </div>
+            <div class="inputBox">
+                <span>name on card :</span>
+                <input type="text" placeholder="mr. john deo">
+            </div>
+            <div class="inputBox">
+                <span>credit card number :</span>
+                <input type="number" placeholder="1111-2222-3333-4444">
+            </div>
+            <div class="inputBox">
+                <span>exp month :</span>
+                <input type="text" placeholder="january">
+            </div>
+
+            <div class="flex">
+                <div class="inputBox">
+                    <span>exp year :</span>
+                    <input type="number" placeholder="2022">
+                </div>
+                <div class="inputBox">
+                    <span>CVV :</span>
+                    <input type="text" placeholder="1234">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <input type="submit" value="submit" class="submit-btn">
+
+</form>
+
+            </div>
+</section>
 </body>
 </html>

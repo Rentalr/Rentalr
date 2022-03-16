@@ -231,7 +231,6 @@ input[type="checkbox"] {
   height: 700px;
   border-radius: 15px;
   overflow: hidden;
-  background-image: cover;
 }
 
 /* .slides {
@@ -268,8 +267,10 @@ input[type="checkbox"] {
 .slider figure img {
   max-width: 100%;
   width: 20%;
-  height: 500px;
+  height: 600px;
   float: left;
+  background-size: cover;
+  margin-bottom: 20px;
 }
 
 @keyframes slider {
@@ -940,3 +941,130 @@ input[type="checkbox"] {
     transition: 0.3s ease;
   }
 } */
+
+/* billing */
+.title {
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-left: 50%;
+  color: #b0acac;
+}
+.billing-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 6rem, auto;
+  position: relative;
+  height: auto;
+  margin-top: 15vh;
+}
+
+.billing-info-left {
+  max-width: 100%;
+  height: 500px;
+  background-position: left;
+  margin-left: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-left: 2rem;
+}
+.billing-info-left img {
+  height: 600px;
+  width: 100%;
+  background-color: var(--bg-green-500);
+}
+.billing-info-right {
+  text-align: center;
+  margin: 1rem;
+}
+
+.billing-info-right .sub-title {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.billing-info-right p {
+  margin-top: 0.5rem;
+  padding: 0 1rem;
+  line-height: 1.5;
+  color: var(--bg-grey-100);
+}
+
+/* billig-form */
+.container form {
+  padding: 20px;
+  width: 700px;
+  background: var(--bg-green-500);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container form .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.container form .row .col {
+  flex: 1 1 100px;
+}
+
+.container form .row .col .title {
+  font-size: 20px;
+  color: #b0acac;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container form .row .col .inputBox {
+  margin: 15px 0;
+}
+
+.container form .row .col .inputBox span {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.container form .row .col .inputBox input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  font-size: 15px;
+  text-transform: none;
+  border-radius: 10px;
+}
+
+.container form .row .col .inputBox input:focus {
+  border: 1px solid #000;
+}
+
+.container form .row .col .flex {
+  display: flex;
+  gap: 15px;
+}
+
+.container form .row .col .flex .inputBox {
+  margin-top: 5px;
+}
+
+.container form .row .col .inputBox img {
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.container form .submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 17px;
+  background-color: #073b07;
+  color: #fff;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.container form .submit-btn:hover {
+  background: #2ecc71;
+}
