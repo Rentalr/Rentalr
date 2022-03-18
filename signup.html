@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration login form</title>
+    <script>
+        $(document).ready(function(){
+$(".sign_in").hide();
+$(".li_up").addClass("active");
+
+$(".li_in").click(function(){
+    $(this).addClass("active");
+$(".li_up").removeClass("active");
+
+})
+            $(".li_in").click(function () {
+                $(this).addClass("active");
+                $(".li_up").removeClass("active");
+
+            }) 
+        });
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="left">
+            <h3>Rentlar</h3>
+            <img src="img/ap1.jpg" alt="apartment image" >
+        </div>
+        <div class="right">
+            <div class="tabs">
+                <ul>
+                    <li class="li_up"> Sign Up </li>
+                    <li class="li_in"> Sign In </li>
+                </ul>
+            </div>
+
+            <div class="sign_up">
+                <div class="input_field">
+                    <input type="text" placeholder ="Username" class ="input">
+                </div>
+                <div class="input_field"><input type="text" placeholder="Email" class="input"></div>
+        <div class="input_field">
+            <input type="password" placeholder="Password" class="input">
+        </div>
+                <div class="input_field"><select class="form-control" data-val="true" data-val-required="The Role field is required." id="user_Role"
+                    name="user.Role" required="True">
+                    <option value="">Select Role...</option>
+                    <option value="1">Landlord</option>
+                    <option selected="selected" value="5">Property Manager</option>
+                    <option value="2">Tenant</option>
+                    <option value="4">Contractor</option>
+                </select>
+                <div class="invalid-feedback">Please select a role.</div>
+                <span class="form-text">If you're both a Property Manager and a Landlord, select Property Manager.</span>
+                </div>
+
+                <div class="btn"><a href="#">Register</a></div>
+                </div> 
+
+<div class="sign_in">
+    <div class="input_field">
+        <input type="text" placeholder="E-mail" class="input">
+    </div>
+    <div class="input_field">
+        <input type="password" placeholder="Password" class="input">
+    </div>
+    <div class="btn"><a href="#">Login</a></div>
+</div>
+
+</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
