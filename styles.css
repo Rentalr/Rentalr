@@ -1070,94 +1070,44 @@ input[type="checkbox"] {
 }
 
 /* sign-up */
-.wrapper {
+.l_in {
+  min-height: 100vh;
   display: flex;
-  max-width: 560px;
-  width: 100%;
-  height: 350px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+  padding-bottom: 60px;
 }
-
-.wrapper .left,
-.wrapper .right {
-  width: 50%;
-  height: 100%;
-  padding: 30px;
-}
-
-.wrapper .left {
-  background: #494f57;
-}
-
-.wrapper .left h3 {
+.l_in .content {
   text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 3px;
+}
+
+.l-in .content h3 {
+  font-size: 30px;
+  color: #333;
+}
+
+.l-in .content h3 span {
+  background-color: crimson;
   color: #fff;
-  font-size: 20px;
+  border-radius: 5px;
+  padding: 0 15px;
 }
 
-.wrapper .left img {
-  display: block;
-  width: 220px;
-  margin: 25px auto 0;
+.l-in .content p {
+  font-size: 25px;
+  margin-bottom: 20px;
 }
 
-.wrapper .right {
-  background: #fff;
-}
-
-.wrapper .right .tabs ul {
-  text-align: center;
-}
-
-.wrapper .right .tabs ul li {
+.l-in .content .btn {
   display: inline-block;
-  margin: 5px;
-  padding: 5px 10px;
-  font-size: 14px;
-  color: #494f57;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  cursor: pointer;
-}
-
-.wrapper .right .tabs ul li.active {
-  border-bottom: 2px solid #494f57;
-}
-
-.wrapper .right .register,
-.wrapper .right .login {
-  margin-top: 20px;
-}
-
-.wrapper .right .input_field {
-  margin-bottom: 15px;
-}
-
-.wrapper .right .input_field .input {
-  width: 100%;
-  padding: 10px 15px;
-  border: 0;
-  font-size: 12px;
-  background: #ecebeb;
-}
-
-.wrapper .right .btn {
-  margin-top: 20px;
-  background: #494f57;
-  padding: 10px;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: bold;
-}
-
-.wrapper .right .btn a {
+  padding: 10px 30px;
+  font-size: 20px;
+  background: #333;
   color: #fff;
-  display: block;
-  font-size: 14px;
+  margin: 0 5px;
+}
+
+.l-in .content .btn:hover {
+  background-color: crimson;
 }

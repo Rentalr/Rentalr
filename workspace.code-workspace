@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": ".."
+	},
+	{
+		"name": "Rentalr-1",
+		"path": "../Rentalr-1"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Rentalr"
+  }
+}
