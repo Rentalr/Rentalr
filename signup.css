@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(ap1.jpg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+h1 {
+  color: white;
+  position: relative;
+  width: auto;
+  text-align: center;
+}
+.tabs {
+  position: relative;
+  width: auto;
+  text-align: center;
+  padding: 20px;
+}
+ul li a:hover {
+  color: white;
+}
+.sign_up {
+  text-align: center;
+  padding: 20px;
+}
+.input_field {
+  padding: 10px 15px;
+}
+.form-text {
+  color: white;
+}
+.invalid-feedback {
+  color: white;
+}
+.btn a {
+  color: orange;
+}
+.btn a:hover {
+  color: white;
+}
+.sign_in {
+  text-align: center;
+  padding: 20px;
+}
