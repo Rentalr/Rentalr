@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project manager dashboard</title>
+    <meta name="Description"
+        content="Rentalproperty management software that brings landlords,property managers, tenants and contractors together.">
+    <meta name="Keywords"
+        content="rental property management software, property management software, mobile landlord, mobile property management,landlord app">
+    <meta name="author" content="Rentalr">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/96bedca6d6.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="p_manager.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Main container start -->
+    <div class="main-container">
+        <!-- Navigation start -->
+
+        <div class="aside">
+
+            <div class="logo">
+                <a href="#"><span>R</span>entlar</a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <nav id="navbar" class="nav padd-15">
+                <div class="nav-items padd-15">
+
+
+                    <ul class="nav1 drop_up">
+
+<li class="nav-item dropdown">
+    <a href="#">
+        Account
+    </a>
+    <ul>
+        <li><a href="#">Subusers</a></li>
+
+        <li><a href="#">Online payment Settings</a></li>
+
+        <li><a href="#">Preferences</a></li>
+
+        <li><a href="#">Notifications</a></li>
+
+        <li><a href="#">Message Templates</a></li>
+
+        <li><a href="#">Branding</a></li>
+
+        <li><a href="#">Billing Info</a></li>
+
+        <li><a href="#">Billing Discounts</a></li>
+
+        <li><a href="#">Change Password</a></li>
+
+        <li><a href="#">Log out</a></li>
+    </ul>
+</li>
+
+                        <li>
+                            <a href="#">Reports</a>
+                            <ul>
+                                <li><a href="#">Accounting Reports</a></li>
+
+                                <li><a href="#">Expenses Report</a></li>
+
+                                <li><a href="#">Income Report</a></li>
+
+                                <li><a href="#">Property Reports</a></li>
+
+                                <li><a href="#">Occupancy Report</a></li>
+
+                                <li><a href="#">Tenant Report</a></li>
+
+                                <li><a href="#">Tenant Rent History Report</a></li>
+
+                                <li><a href="#">Vendor Reports</a></li>
+
+                                <li><a href="#">All Report</a></li>
+                            </ul>
+                        </li>
+
+
+                        
+
+
+                    </ul>
+
+                    <ul class="nav2 drop_down">
+                        <li><a href="#">Dashboard</a></li>
+                        <li>
+                            <a href="#">Landlords</a>
+                            <ul>
+                                <li><a href="add_ladlord.html">Add Landlord</a></li>
+                                <li><a href="#">All Landlords</a></li>
+                                <li><a href="#">Invoices</a></li>
+                                <li><a href="#">Send Invoice</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">Properties</a>
+                            <ul>
+                                <li><a href="#">Add Property</a></li>
+                                <li><a href="#">All Properties</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">Tenants</a>
+                            <ul>
+                                <li><a href="#">Add Tenant</a></li>
+                                <li><a href="#">All Tenants</a></li>
+                                <li><a href="#">Invoices</a></li>
+                                <li><a href="#">Send Invoice</a></li>
+                                <li><a href="#">Contact Tenants</a></li>
+                                <li><a href="#">Applicants</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">Accounting</a>
+                            <ul>
+                                <li><a href="#">Transactions</a></li>
+                                <li><a href="#">Recurring Transaction</a></li>
+                                <li><a href="#">Excel Import</a></li>
+                                <li><a href="#">Reconciliation</a></li>
+                                <li><a href="#">Transaction Types</a></li>
+                                <li><a href="#">Trips</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">Task Management</a>
+                            <ul>
+                                <li><a href="#">To-Do List</a></li>
+                                <li><a href="#">Vendors</a></li>
+                                <li><a href="#">Vendor Invoices</a></li>
+                                <li><a href="#">Send Vendor Invoice</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">Records</a>
+                            <ul>
+                                <li><a href="#">Documents</a></li>
+                                <li><a href="#">Forms</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Calendar</a></li>
+
+                    </ul>
+
+                </div>
+            </nav>
+            <!-- <i class="fa fa-bars"></i> -->
+        </div>
+        <!-- Navigation end -->
+<!-- dashboard start -->
+ <section class="p_dashboard">
+<div id="main">
+    <div class="head">
+        <div class="col-div-6"></div>
+        <div class="col-div-6"></div>
+        <div class="clearfix"></div>
+        <div class="clearfix"></div>
+
+
+        <div class="col-div-3">
+            <div class="box box-overflow">
+                <h3>Accounts Receivable($0)</h3>
+                <p>All of your landlords are currently up to date on their payments.</p>
+            </div>
+        </div>
+
+        <div class="col-div-3">
+            <div class="box box-overflow">
+                <h3>Accounts Payable($0)</h3>
+                <p>You don't owe anyone money</p>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+        <br /><br />
+        <div class="col-div-8">
+            <div class="box-8">
+        <div class="content-box">
+
+            <h3>
+                Accounting
+                <select id="summary-date-range" class="form-control float-right"
+                    style="width: 160px; margin-top: -9px; margin-right: -19px;">
+                    <option value="thisYear">This Year</option>
+                    <option value="lastYear">Last Year</option>
+                    <option value="lastYearToDate">Last Year to Date</option>
+                    <option value="thisMonth">This Month</option>
+                    <option value="lastMonth">Last Month</option>
+                </select>
+            </h3>
+        
+            <div class="row">
+                <div class="col-sm-6">
+        
+                    <input type="hidden" id="propertyId" value="" />
+        
+                    <h4>
+                        Financial Summary
+                        <a href="http://help.housters.com/financial-summary/" title="What is this?" data-toggle="tooltip"
+                            target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a>
+                    </h4>
+        
+                    <div class="progress-wrapper"><img id="summary-progress" src="img/exclamation.jpg" /><p>There is not enough data  available to display your Financial Summary. You need to <a href="add_trans.php">add transactions.</a></p></div>
+                    <table id="summary-results" class="table pretty-table" style="display: none;">
+                        <thead>
+                            <tr class="divider">
+                                <td colspan="100%">
+                                    <hr />
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Property Management Fees: </td>
+                                <td>
+                                    <span id="summary-property-management-fees" class="green">
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="divider">
+                                <td colspan="100%">
+                                    <hr />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 208px;">
+                                    Gross Income:
+                                </td>
+                                <td id="summary-gross-income" class="green"></td>
+                            </tr>
+                            <tr class="divider">
+                                <td colspan="100%">
+                                    <hr />
+                                </td>
+                            </tr>
+                            <tr class="summary-expenses-row">
+                                <td>Expenses</td>
+                                <td id="summary-expenses" class="red"></td>
+                            </tr>
+                            <tr class="divider summary-expenses-row">
+                                <td colspan="100%">
+                                    <hr />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Operating Costs:</td>
+                                <td id="summary-operating-costs" class="red"></td>
+                            </tr>
+                            <tr class="divider">
+                                <td colspan="100%">
+                                    <hr />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Net Operating Income:</td>
+                                <td id="summary-net-operating-income"></td>
+                            </tr>
+                            <tr class="divider">
+                                <td colspan="100%">
+                                    <hr />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Cash Gain:</td>
+                                <td id="summary-cash-gain"></td>
+                            </tr>
+                            <tr class="divider">
+                                <td colspan="100%">
+                                    <hr />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+        
+        
+        
+        
+                </div>
+                <div class="col-sm-6">
+        
+                    <h4>
+                        Expenses
+                        <a href="#">(Report)</a>
+                    </h4>
+                    <br />
+        
+                    <div class="progress-wrapper"><img id="expenses-progress" src="img/exclamation.jpg" /></div>
+                    <div id="expenses-chart">
+                        <p>There is not enough data available to display your Expenses chart. You need to <a href="add_expense_trans.php">add expense transactions.</a></p>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+        
+        </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+        
+                <div id="notes" class="box">
+                    <h3>Notes</h3>
+        
+                    <table class="table pretty-table">
+                        <tbody data-bind="foreach: displayItems, visible: items().length > 0">
+                            <tr data-bind="event: { mouseover: onMouseOver, mouseout: onMouseOut }">
+                                <td>
+                                    <span data-bind="html: utils.replace(text(), '\n', '<br/>'), visible: !editMode()"
+                                        class="small"></span>
+                                    <textarea rows="4"
+                                        data-bind="value: editText, visible: editMode, attr: { id: 'editText' + $index() }"
+                                        placeholder="Edit a note" class="form-control"></textarea>
+        
+                                    <div style="margin-top: 5px;" data-bind="visible: showActionLinks() && !editMode()">
+                                        <button type="button" class="btn btn-danger btn-sm inline-block float-right"
+                                            style="margin-left: 5px;" data-bind="click: remove"><i
+                                                class="far fa-trash-alt"></i></button>
+                                        <button type="button" class="btn btn-primary btn-sm inline-block float-right"
+                                            data-bind="click: edit"><i class="fas fa-edit"></i></button>
+                                    </div>
+                                    <div style="margin-top: 5px;" data-bind="visible: editMode">
+                                        <button type="button" class="btn btn-primary btn-sm inline-block float-right"
+                                            style="margin-left: 5px;" data-bind="click: saveEdit"><i
+                                                class="far fa-save"></i></button>
+                                        <button type="button" class="btn btn-secondary btn-sm inline-block float-right"
+                                            data-bind="click: cancel"><i class="far fa-window-close"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="divider">
+                                <td colspan="100%">
+                                    <hr />
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>
+                                    <textarea id="addText" rows="4" data-bind="value: addText" placeholder="Add a new note"
+                                        class="form-control"></textarea>
+                                    <button type="button" id="note-add-button" class="btn btn-primary btn-sm block float-right"
+                                        style="margin-top: 5px;" data-bind="click: saveAdd">Save</button>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+        
+                    <p data-bind="visible: items().length === 0" class="darker-gray">You haven't added any notes yet.</p>
+                    <input type="hidden" id="notes-namespace" value="dashboard" />
+                    <input type="hidden" id="notes-propertyId" />
+                    <input type="hidden" id="notes-tenantId" />
+                    <input type="hidden" id="notes-landlordId" />
+                    <input type="hidden" id="notes-vendorId" />
+                </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+<div class="sidenav" id="mySidenav">
+    <div class="col-lg-4">
+    
+        <div class="box">
+              
+            <div>
+                <h4>
+                    Your Billing Status
+                    <a href="billing.php" title="Pricing help topic" data-toggle="tooltip"
+                        target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a>
+                </h4>
+                <div>
+                    <p>
+                        You are in the free 3 month trial
+                        which ends on <b>26/5/2022</b>.
+                        Based on your current number of units, after that the price will be
+                        <span class="translate-billable-currency">1</span> per month.
+                    </p>
+                    <div class="margin-top">
+                        Unapplied Billing Discounts: <span class="translate-currency">24</span><br />
+                        <a href="/Account/BillingDiscounts" class="btn btn-outline-success margin-top">Save on your Rentalr
+                            Subscription</a>
+                    </div>
+                </div>
+                <p class="red margin-top">
+                    You haven't entered your billing info yet! Make sure you enter it before
+                    <b>26/5/2022</b> for continued access Rentalr.
+                </p>
+                <a class="btn btn-success inline-block margin-right" href="/Account/AddBilling">Add Billing Info</a>
+                <a class="btn btn-outline-secondary inline-block" href="billing.php">View Pricing</a>
+            </div>
+    
+            <div class="margin-top">
+                <h4>Tenants Pending Approval</h4>
+    
+                <p>
+                    You have tenants who signed up for Housters, however they will not have access until you assign them to
+                    a Tenant.
+                </p>
+                <a class="btn btn-primary btn-md" href="/Properties/Add">Add Property</a>
+            </div>
+    
+        </div>
+
+</div>
+
+ </section>
+
+
+
+</div>
+        </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</html>

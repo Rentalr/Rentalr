@@ -106,6 +106,7 @@ i {
   left: 0;
   font-size: 30px;
   text-transform: capitalize;
+  margin-bottom: 30px;
 }
 .aside .logo a {
   color: var(--bg-brown-900);
@@ -114,6 +115,7 @@ i {
   font-size: 30px;
   letter-spacing: 5px;
   position: relative;
+  margin-bottom: 30px;
 }
 .aside .logo a span {
   font-family: "Clicker Script", cursive;
@@ -181,18 +183,23 @@ i {
 .aside .nav .nav2 {
   position: relative;
   width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  padding: 0 200px;
+  display: inline-block;
+  padding: 0 60px;
   transition: 0.3s ease;
   top: 0;
   left: 0;
+  margin-left: 100px;
+  margin-right: 5px;
 }
 .nav li {
   float: left;
   list-style: none;
   top: 0;
   left: 0;
+  line-height: 20px;
+}
+.nav .nav1 li {
+  float: right;
 }
 .nav li a {
   font-size: 16px;
@@ -208,6 +215,33 @@ i {
 .nav li a i {
   margin-right: 15px;
 }
+
+.aside .nav .nav1 ul,
+.aside .nav .nav2 ul {
+  position: absolute;
+  top: 30px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.aside .nav .nav1 li:hover > ul,
+.aside .nav .nav2 li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  z-index: 20000;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.aside .nav .nav1 ul li,
+.aside .nav .nav2 ul li {
+  position: relative;
+  margin: 0px;
+  width: 150px;
+  float: none;
+  display: list-items;
+  border-bottom: 1px solid rgba(0, 0, 0.3);
+}
+
 .nav a:not(:last-child) {
   margin-right: 45px;
 }
@@ -1110,4 +1144,135 @@ input[type="checkbox"] {
 
 .l-in .content .btn:hover {
   background-color: crimson;
+}
+
+/* p_manager */
+#main .head {
+  margin-top: 140px;
+}
+.clearfix {
+  clear: both;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+  margin-right: 30%;
+}
+
+#main .head {
+  padding: 20px;
+}
+.col-div-3 {
+  width: 50%;
+  float: left;
+}
+#main .box {
+  width: 85%;
+  height: auto;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+#main .box h3 {
+  font-size: 24px;
+  line-height: 15px;
+  color: #b0acac;
+}
+
+#main .box p {
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 10px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+#main .content-box {
+  padding: 20px;
+}
+#main .content-box h3 {
+  margin: 0px;
+  font-size: 32px;
+  color: #b0acac;
+  margin-bottom: 15px;
+}
+
+#main .content-box h4 {
+  margin: 0px;
+  font-size: 24px;
+  color: #e8dfec;
+}
+#main .box-8 {
+  width: 95%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  height: 330px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.col-12 {
+  width: 100%;
+  float: left;
+}
+
+#main .box div.progress-wrapper {
+  text-align: center;
+}
+#main .box .progress-wrapper img {
+  width: auto;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+  width: 50px;
+  height: 50px;
+  margin-left: 50px;
+}
+
+/* sidenav */
+.col-lg-4 {
+  width: 100%;
+  float: left;
+}
+.sidenav {
+  height: 100%;
+  width: 30%;
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+  right: 0;
+  background-color: #202834;
+  overflow: scroll;
+  transition: 0.5s;
+  padding-top: 30px;
+  font-size: 18px;
+  margin-top: 140px;
+}
+
+.sidenav .col-lg-4 .box {
+  /* margin-top: 140px; */
+  width: 300%;
+  height: auto;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  margin-right: 30px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.sidenav .col-lg-4 .box p {
+  margin-bottom: 30px;
+}
+.sidenav a {
+  padding: 15px 8px 15px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
