@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Landlord</title>
+
+    <meta name="Description"
+        content="Rentalproperty management software that brings landlords,property managers, tenants and contractors together.">
+    <meta name="Keywords"
+        content="rental property management software, property management software, mobile landlord, mobile property management,landlord app">
+    <meta name="author" content="Rentalr">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/96bedca6d6.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="p_manager.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Main container start -->
+    <div class="main-container">
+        <!-- Navigation start -->
+
+        <div class="aside">
+
+            <div class="logo">
+                <a href="#"><span>R</span>entlar</a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <nav id="navbar" class="nav padd-15">
+                <div class="nav-items padd-15">
+
+
+                    <ul class="nav1 drop_up">
+
+                        <li class="nav-item dropdown">
+                            <a href="#">
+                                Account
+                            </a>
+                            <ul>
+                                <li><a href="#">Subusers</a></li>
+
+                                <li><a href="#">Online payment Settings</a></li>
+
+                                <li><a href="#">Preferences</a></li>
+
+                                <li><a href="#">Notifications</a></li>
+
+                                <li><a href="#">Message Templates</a></li>
+
+                                <li><a href="#">Branding</a></li>
+
+                                <li><a href="#">Billing Info</a></li>
+
+                                <li><a href="#">Billing Discounts</a></li>
+
+                                <li><a href="#">Change Password</a></li>
+
+                                <li><a href="#">Log out</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">Reports</a>
+                            <ul>
+                                <li><a href="#">Accounting Reports</a></li>
+
+                                <li><a href="#">Expenses Report</a></li>
+
+                                <li><a href="#">Income Report</a></li>
+
+                                <li><a href="#">Property Reports</a></li>
+
+                                <li><a href="#">Occupancy Report</a></li>
+
+                                <li><a href="#">Tenant Report</a></li>
+
+                                <li><a href="#">Tenant Rent History Report</a></li>
+
+                                <li><a href="#">Vendor Reports</a></li>
+
+                                <li><a href="#">All Report</a></li>
+                            </ul>
+                        </li>
+
+
+
+
+
+                    </ul>
+
+                    <ul class="nav2 drop_down">
+                        <li><a href="p_manager.html">Dashboard</a></li>
+                        <li>
+                            <a href="#">Landlords</a>
+                            <ul>
+                                <li><a href="add_ladlord.html">Add Landlord</a></li>
+                                <li><a href="#">All Landlords</a></li>
+                                <li><a href="#">Invoices</a></li>
+                                <li><a href="#">Send Invoice</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">Properties</a>
+                            <ul>
+                                <li><a href="#">Add Property</a></li>
+                                <li><a href="#">All Properties</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">Tenants</a>
+                            <ul>
+                                <li><a href="#">Add Tenant</a></li>
+                                <li><a href="#">All Tenants</a></li>
+                                <li><a href="#">Invoices</a></li>
+                                <li><a href="#">Send Invoice</a></li>
+                                <li><a href="#">Contact Tenants</a></li>
+                                <li><a href="#">Applicants</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">Accounting</a>
+                            <ul>
+                                <li><a href="#">Transactions</a></li>
+                                <li><a href="#">Recurring Transaction</a></li>
+                                <li><a href="#">Excel Import</a></li>
+                                <li><a href="#">Reconciliation</a></li>
+                                <li><a href="#">Transaction Types</a></li>
+                                <li><a href="#">Trips</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">Task Management</a>
+                            <ul>
+                                <li><a href="#">To-Do List</a></li>
+                                <li><a href="#">Vendors</a></li>
+                                <li><a href="#">Vendor Invoices</a></li>
+                                <li><a href="#">Send Vendor Invoice</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">Records</a>
+                            <ul>
+                                <li><a href="#">Documents</a></li>
+                                <li><a href="#">Forms</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Calendar</a></li>
+
+                    </ul>
+
+                </div>
+            </nav>
+            <!-- <i class="fa fa-bars"></i> -->
+        </div>
+        <!-- Navigation end -->
+        <!-- Add landlord -->
+        <section class="addLandlord">
+            <div class="row">
+                <div class="page-title">
+
+                    <div class="col-sm-8">
+                        <h3>Add Landlord</h3>
+                    </div>
+
+
+
+                    <div class="subtitle">
+                        <div class="required-tip"><span class="required-asterisk">*</span>Required Field</div>
+                    </div>
+                </div>
+
+                <hr class="page-title-divider">
+
+
+                <div class="row">
+                    <div class="col-12">
+                        <form action="/Landlords/Save" id="form">
+                            <h3 class="no-top-margin">
+                                Step 1: Rent collection</h3>
+                            <p class="darker-gray">
+                                Who collects rent from the tenants?
+                            </p>
+
+                            <div class="row">
+                                <div class="form-group col-12">
+
+                                    <div class="tab">
+                                        <div class="btn-group">
+                                            <div class="active">
+                                                The Property Manager
+
+                                            </div>
+                                        </div>
+                                        <div class="btn-group">
+                                            <div>
+                                                The Landlord
+                                            </div>
+                                        </div>
+
+
+                                        <div class="tab-indicator"></div>
+                                    </div>
+
+
+                                    <div class="margin-top">
+                                        <div class="card active">
+                                            <div class="card-body ">
+                                                <h5 class="card-title">When property managers collect rent...</h5>
+                                                <div>
+                                                    <h6 class="card-subtitle mb-2 text-muted">Invoices and Payments Flow
+                                                    </h6>
+                                                    <p class="card-text">
+                                                        Because you collect rent from tenants, it means that payments
+                                                        will
+                                                        be due from you to the landlord. Rentalr will
+                                                        track rent payments that you collect from tenants, subtract how
+                                                        much
+                                                        is owed to you for property management fees
+                                                        (per the contract terms that will be specified below), and
+                                                        expect
+                                                        you to send on the rest of the rent to the
+                                                        landlord.
+                                                        Invoices will be generated according to the contract schedule,
+                                                        and
+                                                        will indicate money owed to the landlord. You
+                                                        will be able
+                                                        to send online payments to the landlord.
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <h6 class="card-subtitle mb-2 text-muted">Adding Payment
+                                                        Transactions
+                                                    </h6>
+                                                    <p class="card-text">
+                                                        When an invoice is generated, once you pay the landlord then you
+                                                        will need to add a <a
+                                                            href="/Accounting/Transactions">Transaction</a>
+                                                        and set the Type to "Payment to Landlord". This will update the
+                                                        amount paid on the invoice.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="margin-top">
+
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">When Landlords Collect Rent...</h5>
+                                                <div>
+                                                    <h6 class="card-subtitle mb-2 text-muted">Invoices and Payments Flow
+                                                    </h6>
+                                                    <p class="card-text">
+                                                        Because the landlord collects rent from tenants, it means that
+                                                        payments will be due from the landlord to
+                                                        you. Rentalr will
+                                                        track property management fees due (per the contract terms that
+                                                        will
+                                                        be specified below), and expect the
+                                                        landlord to send
+                                                        those fees to you. Invoices will be generated according to the
+                                                        contract schedule, and will indicate
+                                                        money owed to you. The landlord
+                                                        will be able to send online payments to you.
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <h6 class="card-subtitle mb-2 text-muted">Adding Payment
+                                                        Transactions
+                                                    </h6>
+                                                    <p class="card-text">
+                                                        When an invoice is generated, once the landlord pays you then
+                                                        you
+                                                        will need to add a <a
+                                                            href="/Accounting/Transactions">Transaction</a>
+                                                        and set the Type to "Property Management Fees Received". This
+                                                        will
+                                                        update the amount paid on the
+                                                        invoice.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Basic info -->
+                            <h3 class="no-top-margin">
+                                Step 2: Basic Information
+                            </h3>
+                            <p class="darker-gray">
+                                Enter some basic information about the landlord, such as their name and contact
+                                information.
+                            </p>
+                            <div class="row">
+                                <div class="form-group col-sm-6">
+                                    <label for="name">Name<span class="required-asterisk">*</span></label>
+                                    <input type="text" id="name" name="item.Name" required maxlength="100"
+                                        class="form-control" data-bind="value: item.name"
+                                        placeholder="Enter name of landlord" />
+                                    <div class="invalid-feedback">Please input a name.</div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-sm-6">
+                                    <label for="emailAddress">Email Address</label>
+                                    <input type="email" id="emailAddress" name="item.EmailAddress" maxlength="50"
+                                        class="form-control" data-bind="value: item.emailAddress"
+                                        placeholder="Enter email of landlord" />
+                                    <div class="invalid-feedback">Please input a valid email address.</div>
+                                </div>
+
+                                <div class="form-group col-sm-6">
+                                    <label for="phoneNumber">Phone #</label>
+                                    <input type="text" id="phoneNumber" name="item.PhoneNumber" maxlength="15"
+                                        class="form-control" data-bind="value: item.phoneNumber"
+                                        placeholder="Enter phone # of landlord" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-sm-6">
+                                    <label for="address1">Address Line 1</label>
+                                    <input id="address1" name="item.Address1" type="text" maxlength="100"
+                                        autocomplete="new" data-bind="value: item.address1" class="form-control"
+                                        placeholder="Enter address line 1" />
+                                </div>
+
+                                <div class="form-group col-sm-6">
+                                    <label for="address2">Address Line 2</label>
+                                    <input id="address2" name="item.Address2" type="text" maxlength="100"
+                                        data-bind="value: item.address2" class="form-control"
+                                        placeholder="Enter address line 2" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-sm-6">
+                                    <label for="city">City</label>
+                                    <input id="city" name="item.City" type="text" maxlength="100"
+                                        data-bind="value: item.city" class="form-control" placeholder="Enter city" />
+                                </div>
+
+                                <div class="form-group col-sm-6">
+                                    <label for="state">State/Province</label>
+                                    <input id="state" name="item.State" type="text" maxlength="100"
+                                        data-bind="value: item.state" class="form-control"
+                                        placeholder="Enter state or province" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-sm-6">
+                                    <label for="zipCode">Zip/Postal Code</label>
+                                    <input id="zipCode" name="item.ZipCode" type="text" maxlength="10"
+                                        data-bind="value: item.zipCode" class="form-control"
+                                        placeholder="Enter zip or postal code" />
+                                </div>
+
+                                <div class="form-group col-sm-6">
+                                    <label for="country">Country</label>
+                                    <input id="country" name="item.Country" type="text" class="form-control"
+                                        maxlength="100" data-bind="value: item.country"
+                                        placeholder="Enter country, leave blank for Kenya" />
+                                </div>
+                            </div>
+
+                            <div class="row dropzone-container">
+                                <div class="col-12">
+                                    <div class="card text-center">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Upload photos of the landlord</h5>
+                                            <div id="photos" class="dropzone"></div>
+                                            <input type="hidden" id="photosJson" name="photosJson" />
+                                        </div>
+                                        <div class="card-footer text-muted small">
+                                            Supported file types: png, jpg, gif
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3>Step 3: Contract Terms</h3>
+
+                            <p class="darker-gray" data-bind="visible: item.rentCollector() == constants.role.Landlord">
+                                Next we need to set up the landlord's contract terms, which Rentalr uses to generate
+                                invoices
+                                for payments due from the landlord in the past as well as going forward.
+                                For example, if you set the landlord as paying $100 monthly and set the
+                                contract start date to 3 months ago, Rentalr will generate 3 invoices with the amount
+                                due set to
+                                $100, with a total amount due of $300.
+                                After a month goes by, Rentalr will generate another invoice and the total due will
+                                increase to $400.
+                            </p>
+                            <p class="darker-gray"
+                                data-bind="visible: item.rentCollector() == constants.role.Property_Manager">
+                                Next we need to set up the landlord's contract terms, which Rentalr uses to generate
+                                invoices
+                                for payments owed to the landlord in the past as well as going forward.
+                                For example, if you set the landlord as paying $100 monthly, set the
+                                contract start date to 3 months ago, and collect $1,000 of rent from
+                                the landlord's tenants each month, Housters will generate 3 invoices with the amount due
+                                set to
+                                $900, with a total amount due of $2,700.
+                                After a month goes by, Rentalr will generate another invoice and the total due will
+                                increase to $3,600.
+                            </p>
+
+                            div class="row">
+                            <div class="form-group col-sm-6">
+                                <label for="startDate">Contract Start Date<span
+                                        class="required-asterisk">*</span></label>
+                                <input type="text" id="startDate" name="item.StartDate" required
+                                    class="form-control date-picker international-date" data-date-format="d/m/yyyy"
+                                    autocomplete="off" data-bind="date: item.startDate"
+                                    placeholder="Enter contract start date" />
+                                <div class="invalid-feedback">Please input a start date.</div>
+                                <span class="form-text">This determines when we start tracking property management fees
+                                    that the landlord
+                                    owes.</span>
+                            </div>
+
+                            <div class="form-group col-sm-6">
+                                <label for="endDate">Contract End Date</label>
+                                <input type="text" id="endDate" name="item.EndDate"
+                                    class="form-control date-picker international-date" data-date-format="d/m/yyyy"
+                                    autocomplete="off" data-bind="date: item.endDate"
+                                    placeholder="Enter contract end date" />
+                                <span class="form-text">When does the contract end? Leave empty if it's an ongoing
+                                    contract.</span>
+                            </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-sm-6">
+                            <label for="paymentInterval">
+                                How often are the Property Management Fees Paid? <span
+                                    class="required-asterisk">*</span>
+                            </label>
+                            <div class="input-group">
+                                <div data-bind="visible: item.paymentFrequency() != constants.paymentFrequency.Once"
+                                    class="input-group-prepend">
+                                    <div class="input-group-text">Every</div>
+                                </div>
+                                <input type="number" id="paymentInterval" name="item.PaymentInterval" required step="1"
+                                    max="999" class="form-control" style="width: 50px;"
+                                    data-bind="textInput: item.paymentInterval, visible: item.paymentFrequency() != constants.paymentFrequency.Once" />
+                                <select class="form-control" data-bind="value: item.paymentFrequency"
+                                    id="item_PaymentFrequency" name="item.PaymentFrequency" required="True"
+                                    style="width: 100px;">
+                                    <option value="1">Months</option>
+                                    <option value="2">Weeks</option>
+                                    <option value="3">Days</option>
+                                    <option value="4">Once</option>
+                                </select>
+                                <div class="invalid-feedback">Please input a valid payment interval.</div>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-sm-6">
+                            <label for="item_PaidInArrears">Are Property Management Fees Paid in Arrears?</label><br />
+                            <input data-bind="bootstrapSwitch: item.paidInArrears" data-off-text="No" data-on-text="Yes"
+                                id="item_PaidInArrears" name="item.PaidInArrears" type="checkbox" value="true" />
+                            <span class="form-text">If so, property management fees are due at the end of each period
+                                instead of at the
+                                beginning.</span>
+                        </div>
+                    </div>
+
+                    <div class="row" data-bind="visible: item.paymentFrequency() == constants.paymentFrequency.Months">
+                        <div class="form-group col-sm-6">
+                            <label for="daysOfMonthPaymentDue">Day(s) of Month Fee Due<span
+                                    class="required-asterisk">*</span></label>
+                            <input id="daysOfMonthPaymentDue" name="item.DaysOfMonthPaymentDueString" type="text"
+                                required pattern="^[0-9,]+$" maxlength="10"
+                                data-bind="textInput: item.daysOfMonthPaymentDueString" class="form-control"
+                                placeholder="Enter day(s) of month fee due" />
+                            <div class="invalid-feedback">Please input valid days, comma separated.</div>
+                            <span class="form-text">If multiple days then separate by commas, which will split the
+                                property management fees
+                                owed evenly across each due date.</span>
+                        </div>
+
+                        <div class="form-group col-sm-6" data-bind="visible: item.showFirstMonthProratedPayment">
+                            <label for="item_FirstMonthProratedPayment">Charge Pro-Rated Fee for First
+                                Month?</label><br />
+                            <input data-bind="bootstrapSwitch: item.firstMonthProratedPayment" data-off-text="No"
+                                data-on-text="Yes" id="item_FirstMonthProratedPayment"
+                                name="item.FirstMonthProratedPayment" type="checkbox" value="true" />
+                            <span class="form-text">The contract start date day doesn't match the day of month fee due,
+                                would you like to
+                                charge a pro-rated amount for the first month?</span>
+                        </div>
+
+                        <div class="form-group col-sm-6" data-bind="visible: item.showLastMonthProratedPayment">
+                            <label for="item_LastMonthProratedPayment">Charge Pro-Rated Fee for Last
+                                Month?</label><br />
+                            <input data-bind="bootstrapSwitch: item.lastMonthProratedPayment" data-off-text="No"
+                                data-on-text="Yes" id="item_LastMonthProratedPayment"
+                                name="item.LastMonthProratedPayment" type="checkbox" value="true" />
+                            <span class="form-text">The contract end date day doesn't match the end of a period, would
+                                you like to charge a
+                                pro-rated amount for the last month?</span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-sm-6">
+                            <label for="item_feeType">Property Management Fee Type <span
+                                    class="required-asterisk">*</span></label>
+                            <select class="form-control" data-bind="value: item.feeType" id="item_FeeType"
+                                name="item.FeeType" required="True">
+                                <option selected="selected" value="0">Percentage Of Paid Rent</option>
+                                <option value="1">Amount</option>
+                            </select>
+                            <div class="invalid-feedback">Please select a fee type.</div>
+                        </div>
+
+                        <div class="form-group col-sm-6">
+                            <label for="paymentAmount">Property Management Fee Expected<span
+                                    class="required-asterisk">*</span></label>
+                            <div class="input-group">
+                                <div class="input-group-prepend"
+                                    data-bind="visible: item.feeType() == constants.propertyManagementFeeType.amount">
+                                    <div class="input-group-text">&#xA3;</div>
+                                </div>
+                                <input id="paymentAmount" name="item.PaymentAmount" type="number" required step="0.01"
+                                    min="0" max="9999999999"
+                                    data-bind="textInput: item.paymentAmount, attr: { placeholder: (item.feeType() == constants.propertyManagementFeeType.amount ? 'Fee amount' : 'Percentage of paid rent') }"
+                                    class="form-control" />
+                                <div class="input-group-append"
+                                    data-bind="visible: item.feeType() == constants.propertyManagementFeeType.percentageOfPaidRent">
+                                    <div class="input-group-text">%</div>
+                                </div>
+                                <div class="invalid-feedback">Please input a valid amount.</div>
+                            </div>
+                            <span class="form-text">How much does the landlord need to pay <span
+                                    data-bind="text: item.formattedUnit"></span>?</span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-sm-6" data-bind="visible: isLandlordForm">
+                            <label for="item_PropertyManagementContractId">Property Management Contract <a
+                                    href="/Records/Documents" target="_blank"
+                                    title="View Documents List">Document</a></label>
+                            <select class="form-control" data-bind="value: item.propertyManagementContractId"
+                                id="item_PropertyManagementContractId" name="item.PropertyManagementContractId">
+                                <option value="">Select</option>
+                                <option value="-1">Add New...</option>
+                            </select>
+                            <div class="custom-file margin-top"
+                                data-bind="visible: item.propertyManagementContractId && item.propertyManagementContractId() === '-1'">
+                                <input type="file" class="custom-file-input" id="propertyManagementContract"
+                                    name="item.PropertyManagementContractFile"
+                                    accept="application/msword, text/plain, application/pdf, image/*, application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+                                <label class="custom-file-label" for="propertyManagementContract">Upload a file</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 data-bind="html: 'Step ' + (isLandlordForm() ? '4' : '2') + ': Invoicing'">Step 4:
+                                Invoicing</h3>
+                            <p class="darker-gray">
+                                Invoices are used by Housters to track how much rent is due by a tenant and how much was
+                                paid. If you
+                                set a lease start date that is in the past, Housters will auto-generate invoices on each
+                                day that rent was
+                                due,
+                                based on the lease terms. On each future day that rent is due, a new invoice will be
+                                generated.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-sm-6">
+                            <label for="autoGeneratedInvoiceDescription">Auto-Generated Invoice Description</label>
+                            <textarea id="autoGeneratedInvoiceDescription" name="item.AutoGeneratedInvoiceDescription"
+                                rows="2" class="form-control" placeholder="Invoice description"
+                                data-bind="value: item.autoGeneratedInvoiceDescription"></textarea>
+                            <span class="form-text">Enter a description for the invoices that are auto-generated,
+                                otherwise we'll call them
+                                "Payment due from {start date} to {end date}".</span>
+                        </div>
+                    </div>
+
+
+                    <div class="row" data-bind="visible: !item.id() && item.paymentsPreviewIsVisible()">
+                        <div class="col-sm-6">
+                            <p>
+                                Below are your landlord's expected payments, based on the contract terms that you
+                                specified above.
+                                If it doesn't look correct then consider updating your contract terms, or <a
+                                    href="/contact-us" target="_blank">Contact Support</a> for help.
+                            </p>
+
+                            <table class="table pretty-table">
+                                <thead>
+                                    <tr class="divider">
+                                        <td colspan="100%">
+                                            <hr />
+                                        </td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Expected Payments: </td>
+                                        <td data-bind="html: item.oldPayments.formattedTotalExpectedPayments"></td>
+                                    </tr>
+                                    <tr class="divider">
+                                        <td colspan="100%">
+                                            <hr />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Payment Periods to Date: </td>
+                                        <td id="preview-payments-period-count"></td>
+                                    </tr>
+                                    <tr class="divider">
+                                        <td colspan="100%">
+                                            <hr />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Paid Through: </td>
+                                        <td id="preview-paid-through-date"></td>
+                                    </tr>
+                                    <tr class="divider">
+                                        <td colspan="100%">
+                                            <hr />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <button type="button" data-bind="click: showPaymentsSchedule"
+                                class="btn btn-secondary margin-bottom">Preview
+                                Payments Schedule</button>
+                        </div>
+                    </div>
+
+                    <div id="preview-payments-popup" class="modal fade" style="display: none;">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3>Preview Payments Schedule</h3>
+                                    <a class="close" data-dismiss="modal">×</a>
+                                </div>
+                                <div class="modal-body">
+
+                                    <p>
+                                        This is a preview of how payments will be due over time, based on the contract
+                                        terms specified.
+                                        If it doesn't look correct then consider updating your contract terms, or <a
+                                            href="/contact-us" target="_blank">Contact Support</a> for help.
+                                    </p>
+
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Period From</th>
+                                                <th>Period To</th>
+                                                <th>Due Date</th>
+                                                <th>Payment Due</th>
+                                                <th>Balance (Arrears Total)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="preview-rows"></tbody>
+                                    </table>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-bind="visible: item.showLogOldPayments">
+                        <h3>
+                            Step 5: Log Old Payments
+                            <a href="http://help.housters.com/landlord-contract-terms/"
+                                title="Landlord Contract Terms help topic" data-toggle="tooltip" target="_blank"><span
+                                    class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a>
+                        </h3>
+
+                        <p class="darker-gray" data-bind="visible: item.rentCollector() == constants.role.Landlord">
+                            Now that we've determined how much the landlord should have paid, we need to enter how much
+                            they
+                            actually paid so we know how much they owe. See the options below for the various ways
+                            that you can add the landlord's past payments.
+                        </p>
+                        <p class="darker-gray"
+                            data-bind="visible: item.rentCollector() == constants.role.Property_Manager">
+                            Now that we've determined how much you should have paid to the landlord, we need to enter
+                            how much
+                            you actually paid so we know how much you owe. See the options below for the various ways
+                            that you
+                            can add past payments to the landlord.
+                        </p>
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <div class="radio" data-bind="visible: item.showLogOldPaymentsAutomatically">
+                                    <label><input type="radio" name="item.LogOldPaymentsType" value="1"
+                                            class="log-old-payments-option" /> Log Old Payments
+                                        Automatically</label>
+                                </div>
+                                <div class="radio"><label><input type="radio" name="item.LogOldPaymentsType" value="2"
+                                            class="log-old-payments-option" /> Log Old Payments Manually</label></div>
+                                <div class="radio"><label><input type="radio" name="item.LogOldPaymentsType" value="3"
+                                            class="log-old-payments-option" /> Don't Log Any Old Payments</label></div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div id="log-old-payments-option-1" class="log-old-payments-option-container"
+                                    style="display: none;">
+                                    <div class="alert alert-success" role="alert">
+                                        With this option, Housters will log payment transactions on the dates they were
+                                        due
+                                        for the amounts that were due, and also set all of the landlord's old invoices
+                                        to paid and closed.
+                                        &#xA3;0 will be due from the landlord.
+                                    </div>
+                                </div>
+                                <div id="log-old-payments-option-2" class="log-old-payments-option-container"
+                                    style="display: none;">
+                                    <div class="alert alert-success" role="alert"
+                                        data-bind="visible: item.rentCollector() == constants.role.Landlord">
+                                        With this option, you need to log all of the landlord's old payment transactions
+                                        below.
+                                        The landlord's old invoices will be paid according to the total amount of the
+                                        payments.
+                                    </div>
+                                    <div class="alert alert-success" role="alert"
+                                        data-bind="visible: item.rentCollector() == constants.role.Property_Manager">
+                                        With this option, you need to log all of the old payment transactions to the
+                                        landlord below.
+                                        The landlord's old invoices will be paid according to the total amount of the
+                                        payments.
+                                    </div>
+                                    <div data-bind="with: item.oldPayments">
+
+                                        <table class="table pretty-table" data-bind="visible: payments().length > 0">
+                                            <thead>
+                                                <tr>
+                                                    <th style="width: 50%;">Date</th>
+                                                    <th style="width: 50%;">Amount</th>
+                                                </tr>
+                                                <tr class="divider">
+                                                    <td colspan="100%">
+                                                        <hr />
+                                                    </td>
+                                                </tr>
+                                            </thead>
+                                            <tbody data-bind="foreach: payments">
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <input type="text" required
+                                                                class="form-control date-picker international-date"
+                                                                data-date-format="d/m/yyyy" autocomplete="off"
+                                                                data-bind="date: date, attr: { id: 'OldPayments-type' + $index(), name: 'item.OldPayments[' + $index() + '].Date' }"
+                                                                placeholder="Enter date" />
+                                                            <div class="invalid-feedback">Please input a date.</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text">&#xA3;</div>
+                                                                </div>
+                                                                <input type="number" required step="0.01" min="0"
+                                                                    max="9999999999"
+                                                                    data-bind="value: amount, attr: { id: 'OldPayments-amount' + $index(), name: 'item.OldPayments[' + $index() + '].Amount' }, valueUpdate:'afterkeydown'"
+                                                                    class="form-control" placeholder="Payment Amount" />
+                                                                <div class="invalid-feedback">Please input a valid
+                                                                    amount.</div>
+                                                            </div>
+                                                            <a data-bind="click: $parent.removePayment"
+                                                                class="pointer float-right">Remove</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="divider">
+                                                    <td colspan="100%">
+                                                        <hr />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <button type="button" data-bind="click: addPayment"
+                                            class="pointer margin-right">Add
+                                            Payment</button>
+                                        <span>
+                                            &nbsp;&nbsp;&nbsp;
+                                            <label>Total Payments: </label> <span
+                                                data-bind="html: formattedTotalActualPayments"></span>
+                                        </span>
+                                        <span data-bind="visible: totalUnpaid() > 0">
+                                            &nbsp;&nbsp;&nbsp;
+                                            <span data-bind="html: formattedTotalUnpaid"></span> <label> still
+                                                due</label>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div id="log-old-payments-option-3" class="log-old-payments-option-container"
+                                    style="display: none;">
+                                    <div class="alert alert-warning" role="alert"
+                                        data-bind="visible: item.rentCollector() == constants.role.Landlord">
+                                        With this option, no past payment transactions will be logged for the landlord
+                                        and all of their
+                                        old invoices will be open and unpaid. <span
+                                            data-bind="html: item.formattedTotalExpectedPayments"></span> will be
+                                        due from the landlord. If this isn't accurate, you can always log their old
+                                        payment transactions at
+                                        a later date.
+                                    </div>
+                                    <div class="alert alert-warning" role="alert"
+                                        data-bind="visible: item.rentCollector() == constants.role.Property_Manager">
+                                        With this option, no past payment transactions to the landlord will be logged
+                                        and all of their
+                                        old invoices will be open and unpaid. You can always log their old payment
+                                        transactions at a later
+                                        date.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-bind="visible: item.rentCollector() == constants.role.Landlord">
+                        <h3>
+                            Step <span
+                                data-bind="html: !item.id() && item.showLogOldPayments() > 0 ? '6' : '5'"></span>:
+                            Additional Options
+                            <a href="http://help.housters.com/landlord-contract-terms/"
+                                title="Landlord Contract Terms help topic" data-toggle="tooltip" target="_blank"><span
+                                    class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a>
+                        </h3>
+
+
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="darker-gray">
+                                    Want to automatically add late fee charges when they don't pay within a certain
+                                    number of days after a
+                                    payment is due?
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <table class="table pretty-table"
+                                    data-bind="visible: item.lateFees() && item.lateFees().length > 0">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 20%;">Type</th>
+                                            <th style="width: 20%;">Amount or %</th>
+                                            <th style="width: 20%;">Days after Payment Due</th>
+                                            <th style="width: 40%;">Repeats Daily?</th>
+                                        </tr>
+                                        <tr class="divider">
+                                            <td colspan="100%">
+                                                <hr />
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody data-bind="foreach: item.lateFees">
+                                        <tr>
+                                            <td>
+                                                <div class="form-group">
+                                                    <select
+                                                        data-bind="value: type, attr: { id: 'type' + $index(), name: 'item.LateFees[' + $index() + '].Type' }"
+                                                        class="form-control" required>
+                                                        <option value="0">Amount</option>
+                                                        <option value="1">% of Unpaid Amount</option>
+                                                    </select>
+                                                    <div class="invalid-feedback">Please select a type.</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend"
+                                                            data-bind="visible: type() == constants.lateFeeType.amount">
+                                                            <div class="input-group-text">&#xA3;</div>
+                                                        </div>
+                                                        <input type="number" required step="0.01" min="0"
+                                                            max="9999999999" class="form-control"
+                                                            data-bind="value: amount, attr: { id: 'amount' + $index(), name: 'item.LateFees[' + $index() + '].Amount', placeholder: (type() == constants.lateFeeType.amount ? 'Enter amount' : 'Enter %') }" />
+                                                        <div class="input-group-append"
+                                                            data-bind="visible: type() == constants.lateFeeType.percentageOfUnpaidAmount">
+                                                            <div class="input-group-text">%</div>
+                                                        </div>
+                                                        <div class="invalid-feedback">Please input a valid amount.</div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-group">
+                                                    <input type="number" required step="1" min="0" max="99"
+                                                        data-bind="value: daysAfterPaymentDue, attr: { id: 'daysAfterPaymentDue' + $index(), name: 'item.LateFees[' + $index() + '].DaysAfterPaymentDue' }"
+                                                        class="form-control" placeholder="Enter days" />
+                                                    <div class="invalid-feedback">Please input the days after payment
+                                                        due.</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-group">
+                                                    <input type="checkbox" class="late-fee-checkbox" data-on-text="Yes"
+                                                        data-off-text="No"
+                                                        data-bind="bootstrapSwitch: repeatsDaily, attr: { id: 'repeatsDaily' + $index(), name: 'item.LateFees[' + $index() + '].RepeatsDailyChecked' }" />
+                                                    <span class="form-text">Charge late fees each day after first one is
+                                                        charged (up to 30
+                                                        days)?</span>
+                                                </div>
+                                                <button type="button" data-bind="click: $parent.item.removeLateFee"
+                                                    class="btn btn-outline-danger btn-sm float-right">Remove</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="divider">
+                                            <td colspan="100%">
+                                                <hr />
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 form-group">
+                                <button type="button" data-bind="click: item.addLateFee"
+                                    class="btn btn-sm btn-outline-secondary">Add Late
+                                    Fee</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="hidden" name="item.IsActive" value="true" />
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-lg">Save Landlord</button>
+                    </div>
+                    <input name="item.PaidInArrears" type="hidden" value="false" /><input
+                        name="item.FirstMonthProratedPayment" type="hidden" value="false" /><input
+                        name="item.LastMonthProratedPayment" type="hidden" value="false" /></form>
+                </div>
+            </div>
+
+            </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+
+    </div>
+
+</body>
+
+</html>
