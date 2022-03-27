@@ -10,7 +10,7 @@
         content="Rentalproperty management software that brings landlords,property managers, tenants and contractors together.">
     <meta name="Keywords"
         content="rental property management software, property management software, mobile landlord, mobile property management,landlord app">
-    <meta name="author" content="Rentalr">
+    <meta name="author" content="Rentlar">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />

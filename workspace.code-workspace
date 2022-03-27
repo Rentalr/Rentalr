@@ -1,14 +1,14 @@
 {
   "folders": [
-	{
-		"path": ".."
-	},
-	{
-		"name": "Rentalr-1",
-		"path": "../Rentalr-1"
-	}
-],
+    {
+      "path": ".."
+    },
+    {
+      "name": "Rentlar-1",
+      "path": "../Rentlar-1"
+    }
+  ],
   "settings": {
-    "liveServer.settings.multiRootWorkspaceName": "Rentalr"
+    "liveServer.settings.multiRootWorkspaceName": "Rentlar"
   }
 }
